@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\zelal_tunc_211216069.props" />
+</Project>

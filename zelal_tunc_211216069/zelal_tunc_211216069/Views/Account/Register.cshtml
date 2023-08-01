@@ -1,0 +1,48 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row">
+    <div class="col-4 offset-4">
+        <h1 class="display-4 border-bottom text-center pb-2"> @ViewData["Title"]</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger small"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="UserName" class="form-label">Username</label>
+                <input asp-for="UserName" class="form-control" placeholder="johndoe" />
+                <span asp-validation-for="UserName" class="text-danger small"></span>
+            </div>
+
+                <div class="form-group mb-3">
+                <label asp-for="FullName" class="form-label">FullName</label>
+                <input asp-for="FullName" class="form-control" placeholder="johndoe" />
+                <span asp-validation-for="FullName" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="P@ssW0rd!" />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="SecondPassword" class="form-label">Second-Password</label>
+                <input asp-for="SecondPassword" type="password" class="form-control" placeholder="P@ssW0rd!" />
+                <span asp-validation-for="SecondPassword" class="text-danger small"></span>
+            </div>
+
+            <div class="form-group d-grid mb-3">
+                <button type="submit" class="btn btn-primary d-block">Register</button>
+            </div>
+            <
+        </form>
+
+    </div>
+</div>
